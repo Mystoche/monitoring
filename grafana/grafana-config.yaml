@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-config
+  namespace: monitoring
+data:
+  grafana.ini: |
+    [smtp]
+    enabled = true
+    host = smtp.gmail.com:587
+    user = semensoniao@gmail.com
+    password = OBAMBISEmE6
+    cert_file =
+    key_file =
+    skip_verify = true
+    from_address = semensoniao@gmail.com
+    from_name = Grafana
+    ehlo_identity =
+    startTLS_policy =
